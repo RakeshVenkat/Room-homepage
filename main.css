@@ -22,10 +22,93 @@ body {
   font-family: 'Spartan-Medium';
 }
 
-nav {
-    font-family: 'Spartan-Bold';
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 534px;
+}
+
+.hero-img {
+  width: 60%;
+  position: absolute;
+  background-image: url(./images/desktop-image-hero-1.jpg);
+  background-repeat: no-repeat;
+  height: 534px;
+}
+
+.hero-img header {
+  display: flex;
+  align-items: flex-end;
+  padding: 25px;
+}
+
+.hero-navigation{
+  border: 2px solid black;
+  width: 20%;
+}
+
+.hero-content {
+  border: 2px solid black;
+  width: 300px;
+}
+
+.logo {
+  display: inline-block;
+  padding: 8px;
+  margin: 10px;
+  width: 70px;
+  background-image: url('./images/logo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.navigation {
+  font-family: 'Spartan-Bold';
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+}
+
+.navigation-item {
+  padding: 10px;
+  padding-right: 12px;
+}
+
+.navigation-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  text-transform: lowercase;
 }
 
 .hero {
   border: 1px solid red;
+  background-image: url('./images/desktop-image-hero-1.jpg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  height: 534px;
+}
+/* 
+.hero {
+  position: absolute;
+}
+ */
+
+ 
+@media only screen and (max-width: 600px) {
+  .carousel {
+    display: block;
+  }
+
+  .hero-img{
+    width: 100%;
+    background-image: url(./images/mobile-image-hero-1.jpg);
+    height: 360px;
+  }
+  
+  .logo {
+    background-image: url('./images/icon-hamburger.svg');
+  }
 }
