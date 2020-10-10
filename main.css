@@ -1,3 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Spartan-Medium';
+  src: url('./fonts/static/Spartan-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Spartan-SemiBold';
+  src: url('./fonts/static/Spartan-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Spartan-Bold';
+  src: url('./fonts/static/Spartan-Bold.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Spartan-Medium';
+}
+
+nav {
+    font-family: 'Spartan-Bold';
+}
+
 .hero {
-    border: 1px solid red;
+  border: 1px solid red;
 }
