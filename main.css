@@ -25,15 +25,25 @@ body {
 .carousel {
   display: flex;
   flex-wrap: nowrap;
-  height: 534px;
 }
 
 .hero-img {
-  width: 60%;
-  position: absolute;
-  background-image: url(./images/desktop-image-hero-1.jpg);
   background-repeat: no-repeat;
+  width: 60%;
   height: 534px;
+  border: 2px solid red;
+}
+
+.hero-img-1 {
+  background-image: url(./images/desktop-image-hero-1.jpg);
+}
+ 
+.hero-img-2 {
+  background-image: url(./images/desktop-image-hero-2.jpg);
+}
+ 
+.hero-img-3 {
+  background-image: url(./images/desktop-image-hero-3.jpg);
 }
 
 .hero-img header {
@@ -45,11 +55,25 @@ body {
 .hero-navigation{
   border: 2px solid black;
   width: 20%;
+  border: 2px solid green;
 }
 
 .hero-content {
   border: 2px solid black;
   width: 300px;
+  border: 2px solid blue;
+}
+
+.btn-logo {
+  background-color: transparent;
+  border: none;
+  color: transparent;
+}
+
+.btn-logo:focus {
+  background-color: transparent;
+  border: none;
+  outline: none !important;
 }
 
 .logo {
@@ -60,6 +84,10 @@ body {
   background-image: url('./images/logo.svg');
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.logo-mobile {
+  display: none;
 }
 
 .navigation {
@@ -90,25 +118,39 @@ body {
   background-repeat: no-repeat;
   height: 534px;
 }
-/* 
-.hero {
-  position: absolute;
-}
- */
 
- 
+
 @media only screen and (max-width: 600px) {
   .carousel {
-    display: block;
+    flex-direction: column;
   }
 
   .hero-img{
     width: 100%;
-    background-image: url(./images/mobile-image-hero-1.jpg);
+    background-image: url('./images/mobile-image-hero-1.jpg');
     height: 360px;
   }
   
   .logo {
-    background-image: url('./images/icon-hamburger.svg');
+    background-image: url('./images/icon-close.svg');
   }
+
+  .logo-click {
+    background-image: url('./images/icon-close.svg');
+  }
+
+  .logo-mobile {
+    display: inline-block;
+    padding: 8px;
+    margin: 10px;
+    width: 70px;
+    background-image: url('./images/logo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .navigation {
+    display: none;
+  }
+
 }
